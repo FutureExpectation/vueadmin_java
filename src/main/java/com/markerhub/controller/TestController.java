@@ -21,6 +21,7 @@ public class TestController {
     @GetMapping("/test")
     public Object test(){
         System.out.println("hot-fix");
+        System.out.println("hot-fix 111");
         return Result.succ(sysUserService.list());
     }
     @PreAuthorize("hasAuthority('sys:userlist')")
