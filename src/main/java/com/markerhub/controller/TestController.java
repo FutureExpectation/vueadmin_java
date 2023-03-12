@@ -20,6 +20,7 @@ public class TestController {
     @PreAuthorize("hasRole('admin')")
     @GetMapping("/test")
     public Object test(){
+        System.out.println("hot-fix");
         return Result.succ(sysUserService.list());
     }
     @PreAuthorize("hasAuthority('sys:userlist')")
