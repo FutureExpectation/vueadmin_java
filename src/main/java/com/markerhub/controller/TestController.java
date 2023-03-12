@@ -23,6 +23,7 @@ public class TestController {
         System.out.println("hot-fix");
         System.out.println("master");
         System.out.println("hot-fix 111");
+        System.out.println("master123");
         return Result.succ(sysUserService.list());
     }
     @PreAuthorize("hasAuthority('sys:userlist')")
